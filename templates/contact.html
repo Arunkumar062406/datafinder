@@ -14,11 +14,27 @@
 
 
     <!-- Contact Start -->
+    <div class="container">
+    <div class="switches-container mt-3" style="display: block;">
+        <input type="radio" id="switchPhoneNumber" name="switchPlan" value="PhoneNumber"  checked/>
+        <input type="radio" id="switchEmail" name="switchPlan" value="Email"  />
+        <label for="switchPhoneNumber" onclick="myFunction(1);">Phone Number</label>
+        <label for="switchEmail" onclick="myFunction(2);">Email</label>
+        <div class="switch-wrapper">
+            <div class="switch">
+                <div>Phone Number</div>
+                <div>Email</div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="container-xxl py-5">
-        <div class="container">
+        <div class="container-md">
             <div class="row g-5">
-                <div class="col-lg-8 wow fadeIn" data-wow-delay="0.1s">
+                <div class="loginform col-lg-6 d-flex justify-content-start">
                     <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">SignUp</div>
+                <div class=" wow fadeIn  d-flex justify-content-center" data-wow-delay="0.1s">
+                    
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -76,6 +92,7 @@
                 <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     
                 </div> -->
+            </div>
             </div>
         </div>
     </div>

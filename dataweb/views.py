@@ -12,8 +12,11 @@ def About(request):
     return render(request,'about.html') 
 
 
-def Signup(request):
-    return render(request,'contact.html')       
+# def Signup(request):
+#     return render(request,'contact.html')       
 
 def Pricing(request):
     return render(request,'pricing.html')  
+
+def Signin(request):
+    return render(request,'signup.html')  
