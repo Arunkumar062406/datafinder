@@ -4,7 +4,7 @@
 
 {% include 'header.html'%}
 
-<body class="bg-grey">
+<body>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -17,161 +17,12 @@
     {% include 'nav.html'%}
     <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="{% static 'img/fe5294156180101.63627ab3318de.jpg' %}" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container-xxl py-5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="container-md">
-                                        <div class="row g-5">
-                                            <div class="container col-lg-6 d-flex justify-content-center"></div>
-                                            <div class="loginform col-lg-6 d-flex justify-content-start">
-                                                
-
-                                                    <div class="row">
-                                                        <div class="col-lg-6  btn btn-primary " onclick="formsclick(1)">
-                                                            SignUp</div>
-                                                        <div class="col-lg-6  btn btn-primary" onclick="formsclick(2)">
-                                                            Login</div>
-                                                    </div>
-
-
-                                                        <div id="signupform" style="display:block;"
-                                                            class=" wow fadeIn  d-flex justify-content-center"
-                                                            data-wow-delay="0.1s">
-
-                                                            <form>
-                                                                <div class="row g-3 "
-                                                                    style="padding: 10px;margin: 10px;">
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-floating">
-                                                                            <input type="text" class="form-control"
-                                                                                id="name" placeholder="Your Name">
-                                                                            <label for="name">Your Name</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-floating">
-                                                                            <input type="email" class="form-control"
-                                                                                id="email" placeholder="Your Email">
-                                                                            <label for="email">Company Name</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <div class="form-floating">
-                                                                            <input type="text" class="form-control"
-                                                                                id="subject" placeholder="Subject">
-                                                                            <label for="subject">Email</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <div class="form-floating">
-                                                                            <input type="text" class="form-control"
-                                                                                id="subject" placeholder="Subject">
-                                                                            <label for="subject">Phone Number</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <div class="form-floating">
-                                                                            <input type="text" class="form-control"
-                                                                                id="subject" placeholder="Subject">
-                                                                            <label for="subject">Your Title</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <div class="form-floating">
-                                                                            <textarea class="form-control"
-                                                                                placeholder="Leave a message here"
-                                                                                id="message"
-                                                                                style="height: 100px"></textarea>
-                                                                            <label for="message">Full Address</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <label for="formFile" style="color: white;"
-                                                                            class="form-label text-primary">Reference
-                                                                            File</label>
-                                                                        <input class="form-control" type="file"
-                                                                            id="formFile">
-                                                                        <div class="text-info">Allowed file format -
-                                                                            CSV, Max
-                                                                            Upload Size: 10mb</div>
-                                                                    </div>
-                                                                    <div class="col-12">
-                                                                        <button class="btn btn-primary py-2 px-3 me-3">
-                                                                            Sign-Up
-                                                                            <div
-                                                                                class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                                                                <i class="fa fa-arrow-right"></i>
-                                                                            </div>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-
-
-                                                
-                                                <!-- <div id="loginform" style="display:none;" class="  wow fadeIn  d-flex justify-content-center"
-                                                    data-wow-delay="0.1s">
-
-                                                    <form>
-                                                        <div class="row g-3 " style="padding: 10px;margin: 10px;">
-                                                            
-                                                            <div class="col-12">
-                                                                <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="subject"
-                                                                        placeholder="Subject">
-                                                                    <label for="subject">Username</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="subject"
-                                                                        placeholder="Subject">
-                                                                    <label for="subject">Password</label>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="col-12">
-                                                                <button class="btn btn-primary py-2 px-3 me-3">
-                                                                    Sign-Up
-                                                                    <div
-                                                                        class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                                                        <i class="fa fa-arrow-right"></i>
-                                                                    </div>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div> -->
-
-
-
-
-
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">About Us</h1>
         </div>
     </div>
-    <!-- Carousel End -->
-
+ 
 
 
     <div class="container-xxl">

@@ -19,4 +19,4 @@ def Pricing(request):
     return render(request,'pricing.html')  
 
 def Signin(request):
-    return render(request,'signup.html')  
+    return render(request,'contact.html')  

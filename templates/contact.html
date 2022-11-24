@@ -14,88 +14,148 @@
 
 
     <!-- Contact Start -->
+
+<div class="container-xxl p">
     <div class="container">
-    <div class="switches-container mt-3" style="display: block;">
-        <input type="radio" id="switchPhoneNumber" name="switchPlan" value="PhoneNumber"  checked/>
-        <input type="radio" id="switchEmail" name="switchPlan" value="Email"  />
-        <label for="switchPhoneNumber" onclick="myFunction(1);">Phone Number</label>
-        <label for="switchEmail" onclick="myFunction(2);">Email</label>
-        <div class="switch-wrapper">
-            <div class="switch">
-                <div>Phone Number</div>
-                <div>Email</div>
+        <div class="row">
+            <div class="container-md">
+                <div class="row g-5">
+                    <div class="container col-lg-6 d-flex justify-content-center">
+                        
+                    </div>
+                    <div class="loginform col-lg-6 d-flex justify-content-start">
+                        
+
+                            <div class="row">
+                                <div class="col-lg-6  btn btn-primary " onclick="formsclick(1)">
+                                    SignUp</div>
+                                <div class="col-lg-6  btn btn-primary" onclick="formsclick(2)">
+                                    Login</div>
+                            </div>
+
+
+                                <div id="signupform" style="display:block;"
+                                    class=" wow fadeIn  d-flex justify-content-center"
+                                    data-wow-delay="0.1s">
+
+                                    <form>
+                                        <div class="row g-3 "
+                                            style="padding: 10px;margin: 10px;">
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control"
+                                                        id="name" placeholder="Your Name">
+                                                    <label for="name">Your Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control"
+                                                        id="email" placeholder="Your Email">
+                                                    <label for="email">Company Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control"
+                                                        id="subject" placeholder="Subject">
+                                                    <label for="subject">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control"
+                                                        id="subject" placeholder="Subject">
+                                                    <label for="subject">Phone Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control"
+                                                        id="subject" placeholder="Subject">
+                                                    <label for="subject">Your Title</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control"
+                                                        placeholder="Leave a message here"
+                                                        id="message"
+                                                        style="height: 100px"></textarea>
+                                                    <label for="message">Full Address</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="formFile" style="color: white;"
+                                                    class="form-label text-primary">Reference
+                                                    File</label>
+                                                <input class="form-control" type="file"
+                                                    id="formFile">
+                                                <div class="text-info">Allowed file format -
+                                                    CSV, Max
+                                                    Upload Size: 10mb</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary py-2 px-3 me-3">
+                                                    Sign-Up
+                                                    <div
+                                                        class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                                        <i class="fa fa-arrow-right"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                        
+                        <!-- <div id="loginform" style="display:none;" class="  wow fadeIn  d-flex justify-content-center"
+                            data-wow-delay="0.1s">
+
+                            <form>
+                                <div class="row g-3 " style="padding: 10px;margin: 10px;">
+                                    
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject"
+                                                placeholder="Subject">
+                                            <label for="subject">Username</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject"
+                                                placeholder="Subject">
+                                            <label for="subject">Password</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <button class="btn btn-primary py-2 px-3 me-3">
+                                            Sign-Up
+                                            <div
+                                                class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
+
+
+
+
+
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>
 </div>
-    <div class="container-xxl py-5">
-        <div class="container-md">
-            <div class="row g-5">
-                <div class="loginform col-lg-6 d-flex justify-content-start">
-                    <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">SignUp</div>
-                <div class=" wow fadeIn  d-flex justify-content-center" data-wow-delay="0.1s">
-                    
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Company Name</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Phone Number</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control"  id="subject" placeholder="Subject">
-                                    <label for="subject">Your Title</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Full Address</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="formFile" class="form-label">Reference File</label>
-                                <input class="form-control"  type="file" id="formFile">
-                                <div class="text-danger" >Allowed file format - CSV, Max Upload Size: 10mb</div>
-                              </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-2 px-3 me-3">
-                                    Sign-Up
-                                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    
-                </div> -->
-            </div>
-            </div>
-        </div>
-    </div>
     <!-- Contact End -->
 
 
