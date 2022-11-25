@@ -48,7 +48,8 @@
                                         <div class="col-lg-10">
                                             <div class="post-entry-2 d-flex">
                                                 <div class="contents order-md-1 pl-0">
-                                                    <h2 style="color: blue ;"><a onclick="modelcall()" >News Needs to Meet Its Audiences
+                                                    <h2 style="color: blue ;"><a onclick="modelcall()">News Needs to
+                                                            Meet Its Audiences
                                                             Where They Are</a></h2>
                                                     <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                                                         elit. Eligendi temporibus praesentium neque, voluptatum quam
@@ -98,28 +99,32 @@
 </div>
 
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-            <span  class="btn btn-primary" style="padding: 27px;" > General  </span>
-            <span  class="btn btn-primary" style="padding: 27px;"> Contact </span>
-            <span  class="btn btn-primary" style="padding: 27px;"> Similar </span>
-            <span  class="btn btn-primary" style="padding: 27px;"> carrier </span>
-       
+        <div class="modal-content">
+            <div class="modal-body d-flex justify-content-center">
+                <div class="conrainer-fluid">
+                    <div class="row col-md-12 ">
+                        <div class="col-md-3"><button class="btn btn-primary">General</button></div>
+                        <div class="col-md-3"><button class="btn btn-primary">Contact</button></div>
+                        <div class="col-md-3"><button class="btn btn-primary">Similar</button></div>
+                        <div class="col-md-3"><button class="btn btn-primary">carrier</button></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-        <!-- About End -->
+</div>
+<!-- About End -->
 
 {% endblock content %}
 
 {% block footer %}
 <script>
-    function modelcall(){
+    function modelcall() {
         $('#exampleModalCenter').modal('show');
 
     }
